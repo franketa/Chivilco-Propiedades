@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Chivilco</title>
+    <!--Linkea bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="master.css">
+    <!--Linkea icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="font.awesome.all.css">
+    
+</head>
+
+<body>
+    <!--BARRA DE NAVEGACION-->
+    <section id="barraDeNavegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navbrand" href="#">Chivilco | Propiedades</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto" <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#propiedadesDestacadas">Destacadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#propiedadesChivilcoy">Venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nuestrosAlquileres">Alquileres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tasacionYContacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--Filtro-->
+    <section class="filtroBusqueda">
+
+        <h1 id="h1busqueda">
+            Encontra la casa perfecta con nosotros
+        </h1>
+        <br>
+        <br>
+        <h1 class="bigger " id="h1Chivilco">Chivilco | Propiedades</h1>
+
+
+    </section>
+
+    <section id="propiedadesDestacadas">
+        <h1 id="bannerDestacadas">
+            Propiedades Destacadas
+        </h1>
+        <div class="contencion">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="casaslider9.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption" id="captionz2">
+                                    <h5>Tomaso 1592</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="casaslider1.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption" id="caption2">
+                                    <h5>Alvear 815</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="casaslider3.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Yapeyu 370</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="carouselExampleCaptions2" class="carousel slide dos" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="casaslider5.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Pent House Palermo</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="casaslider8.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Callao 5489</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="casaslider6.jpg" class="d-block w-100 border" alt="...">
+                                <div class="carousel-caption">
+                                    <h5>Colon 512</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!---CAMBIO DE SECCION A CARDS-->
+
+    <section id="propiedadesChivilcoy">
+        <h1 id="bannerPropiedadesChivilcoy">
+            Propiedades Disponibles Chivilcoy
+        </h1>
+        <div id="propiedades-wraper">
+            <div class="contencion">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card border" id="slidercard1">
+                            <div id="carouselExampleCaptionscard1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider9.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider1.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider3.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Yapeyu 670</h5>
+                                <p class="card-text">Entrega Inmediata de la mano de Chivilco|Propiedades. Todos los servicios y calle de asfalto</p>
+                                <br>
+                                <h5 class="precio">
+                                    $USD: 48.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border" id="slidercard2">
+                            <div id="carouselExampleCaptionscard2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider9.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider1.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider3.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Yapeyu 670</h5>
+                                <p class="card-text">Entrega Inmediata de la mano de Chivilco|Propiedades. Todos los servicios y calle de asfalto</p>
+                                <br>
+                                <h5 class="precio">
+                                    $USD: 150.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border" id="slidercard3">
+                            <div id="carouselExampleCaptionscard3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider41.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider40.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider39.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Vicente Lopez 541</h5>
+                                <p class="card-text">Casa diseñada por el arquitecto Ibañez. Cuenta con todos los servicios, amplia piscina, 3 habitaciones y calle de asfalto.
+                                </p>
+                                <h5 class="precio">
+                                    $USD: 232.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border" id="slidercard4">
+                            <div id="carouselExampleCaptionscard4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider38.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider37.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider36.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Honorio Pueyrredon 1568</h5>
+                                <p class="card-text">de dos plantas, con 4 dormitorios, baño en suite con hidromasaje, garaje con portón automatizado para la entrada de dos vehículos.</p>
+                                <h5 class="precio">
+                                    $USD: 489.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border" id="slidercard5">
+                            <div id="carouselExampleCaptionscard5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider33.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider34.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider35.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jean Jaures 8892</h5>
+                                <p class="card-text">Dptos 2 AMB, 1 dormitorio. con placard, cocina, baño completo, living comedor, balcon con parrilla. (46 MTRS2).</p>
+                                <h5 class="precio">
+                                    $USD: 48.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border" id="slidercard6">
+                            <div id="carouselExampleCaptionscard6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carta active">
+                                        <img src="casaslider30.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider31.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                    <div class="carousel-item carta">
+                                        <img src="casaslider32.jpg" class="d-block w-100 border" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptionscard6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Landero 996</h5>
+                                <p class="card-text">Rejas al frente en muy buen estado, Planta baja, living, comer, cocina con sus respectivos muebles sobre y bajo mesada.</p>
+                                <h5 class="precio">
+                                    $USD: 480.000$
+                                </h5>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="modalReverse()"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        onclick="modalReverse()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CAMBIO A CARDS ALQUILERES-->
+
+    <section id="nuestrosAlquileres">
+        <div id="cards_landscape_wrap-2">
+            <div class="contencion">
+                <h1 id="h1Alquileres">Alquileres Disponibles en Chivilcoy</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="casa20.jpg" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6>Calle 90 y Mathus</h6>
+                                        <p>Cuenta con todos los servicios, calle asfaltada. Entrega Inmediata.
+                                            Calidad Chivilco| a su disposicion.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="casa22.jpg" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6>Av. De Tomasso 1598</h6>
+                                        <p>Cuenta con todos los servicios, Casaquinta. Entrega Inmediata.
+                                            Calidad Chivilco| para usted.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="casa23.jpg" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6>Calle 90 y Mathus</h6>
+                                        <p>Cuenta con todos los servicios, calle asfaltada. Entrega Inmediata.
+                                            Calidad Chivilco| a su disposicion.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="tasacionYContacto">
+        <div class="banner" id="bannerTasaciones">
+            <h1>
+                Contactate con nosotros!
+            </h1>
+            <h3>
+
+            </h3>
+        </div>
+        <!--FORMS-->
+        <div class="contencion">
+            <div class="row row-cols-1 row-cols-md-2" id="rowform">
+                <div class="col">
+                    <form class="form-box needs-validation" novalidate method="POST" action="csubmit.php"
+                        id="fields_contact">
+                        <div class="contacto-forms-titulo"><img
+                                src="https://static.tokkobroker.com/tfw/img/mail.svg?20210226213852"><br>Contacto </div>
+                        <div class="form-group">
+                            <input class="form-control" name="cnombre" id="contact_name" placeholder="Nombre" required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="ctelefono" id="contact_cellphone" placeholder="Celular"
+                                required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="cemail" id="contact_email" placeholder="E-mail" required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="cmensaje" id="contact_msg" placeholder="Mensaje"
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                            <button type="submit" class="btn btn-success" onclick="guardarinfocform()">Contactar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form class="form-box needs-validation" novalidate action="tsubmit.php" method="POST"
+                        id="fields_tasacion">
+                        <div class="tasacion-forms-titulo"><img src="icono-tasaciones.png"><br>Tasacion</div>
+                        <div class="form-group">
+                            <input class="form-control" name="tnombre" id="tasacion_name" placeholder="Nombre" required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="ttelefono" id="tasacion_cellphone" placeholder="Celular"
+                                required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="temail" id="tasacion_email" placeholder="E-mail" required>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="tmensaje" id="tasacion_msg"
+                                placeholder="Caracteristicas de su propiedad en cuestion" required></textarea>
+                            <div class="invalid-feedback">
+                                Debe completar este campo.
+                            </div>
+                            <div class="valid-feedback">
+                                Esto se ve bien!
+                            </div>
+                            <button type="submit"  onclick="guardarinfotform()" class="btn btn-success">Contactar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Acerca De</h6>
+                    <p class="text-justify">Chivilco|Propiedades es una familia, dedicada a encontrar el hogar de miles.
+                        Conocemos tanto las facilidades para nuestro cliente como las dificultades, eso nos distingue de
+                        las demas empresas en el mercado a dia de hoy.
+
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Guia</h6>
+                    <ul class="footer-links">
+                        <li><a href="#barraDeNavegacion">Inicio</a></li>
+                        <li><a href="#propiedadesDestacadas">Propiedades Destacadas</a></li>
+                        <li><a href="#propiedadesDisponibles">Propiedades en Venta</a></li>
+                        <li><a href="#nuestrosAlquileres">Propiedades en Alquiler</a></li>
+                        <li><a href="#tasacionYContacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Creada por &copy;
+                        <a href="https://www.fb.com/franco.helguera5">Franco Helguera</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <i class="fas fa-arrow-circle-up fa-2x"></i>
+
+    <!-- Linkea SMTPJS (para mandar email form)-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!--Linkea bootstrap bundle JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!--Linkea mi JS-->
+    <script src="main.js"></script>
+    <!--Linkea Jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>$(window).scroll(function () {
+            $('.fa-arrow-circle-up').toggleClass('scrolled', $(this).scrollTop() > 800);
+        });</script>
+</body>
+
+
+</html>
